@@ -94,6 +94,7 @@ def get_correlatives(message):
     args.pop(0)
     materia = ' '.join(args)
     logger.info(f"El usuario {message.from_user.id} ha solicitado CORRELATIVAS de {materia}.")
+
     if len(args) == 0:
         bot.send_message(message.chat.id, "Para conocer las correlativas de una materia usa este comando junto a el nombre de la materia a solicitar.\n Ejemplo: /correlative analisis matematico ii")
     else:
